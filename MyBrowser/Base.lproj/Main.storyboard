@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,33 +20,23 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-fN-TYt">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <animations/>
                                 <items>
                                     <navigationItem title="Title" id="jEp-gz-vzf"/>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="IGn-gP-lIo">
                                 <rect key="frame" x="-5" y="108" width="605" height="492"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C0H-Yk-6Hs"/>
-                                </connections>
                             </webView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-Pf-TaB">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <animations/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ecI-oN-Wdg"/>
-                                </connections>
                             </searchBar>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="IjP-fN-TYt" secondAttribute="trailing" id="6ee-ZM-e9Q"/>
@@ -61,21 +51,9 @@
                             <constraint firstItem="IGn-gP-lIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="yfW-y7-px6"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="SearchBar" destination="MEG-Pf-TaB" id="Uht-NP-1tc"/>
-                        <outlet property="searchDisplayController" destination="tTr-xN-e6Z" id="D1N-dC-3wB"/>
-                        <outlet property="webview" destination="IGn-gP-lIo" id="yNm-2Z-uvG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="tTr-xN-e6Z">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="7vi-FQ-jF3"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="suH-NS-n6W"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="eYn-16-7uN"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="jsB-re-OLi"/>
-                    </connections>
-                </searchDisplayController>
+                <searchDisplayController id="tTr-xN-e6Z"/>
             </objects>
         </scene>
     </scenes>
